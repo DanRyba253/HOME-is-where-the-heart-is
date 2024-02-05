@@ -1,0 +1,35 @@
+[dunst]
+command=./notify
+signal=12
+
+[language]
+command=./get_layout
+interval=1
+
+[connection]
+command='./get_connect'
+interval=10
+
+[cpu]
+command=mpstat 1 1 | awk '/Average:/{print "CPU: " $3 "%"}'
+interval=10
+
+[memory]
+command=./mem-usage
+label=MEM: 
+interval=10
+
+[swap]
+command=./mem-usage
+label=SWAP: 
+instance=swap
+interval=10
+
+[date]
+command=fish -c 'string upper (date +%a\ %d-%m-%Y)'
+interval=600
+
+[time]
+command=date "+%H:%M "
+interval=10
+

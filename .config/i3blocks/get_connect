@@ -1,0 +1,3 @@
+#!/usr/bin/fish
+
+echo (nmcli dev wifi list | grep '^\*' | awk '{print $3 ": " $8 "%"}')
