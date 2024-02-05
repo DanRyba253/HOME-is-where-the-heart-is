@@ -8,6 +8,8 @@ if status is-interactive
     end
 end
 
+set EDITOR nvim
+
 set -q GHCUP_INSTALL_BASE_PREFIX[1]; or set GHCUP_INSTALL_BASE_PREFIX $HOME ; set -gx PATH $HOME/.cabal/bin /home/dani/.ghcup/bin $PATH # ghcup-env
 
 set LANG en_US.utf-8
