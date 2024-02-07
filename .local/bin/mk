@@ -1,0 +1,15 @@
+#!/usr/bin/fish
+for arg in $argv
+    if test (count (string match "*/" "$arg")) -eq 1
+    	mkdir -p $arg
+	exit
+    end
+
+    set path_parts (string split -r -m 1 "/" $arg)
+    
+    if test (count $path_parts) -eq 2
+    	mkdir -p $path_parts[1]
+    end
+
+    touch $arg
+end
