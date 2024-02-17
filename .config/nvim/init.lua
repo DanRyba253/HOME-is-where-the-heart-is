@@ -372,7 +372,7 @@ local servers = {
     clangd = {},
     hls = {
         haskell = {
-            formattingProvider = "fourmolu"
+            formattingProvider = "stylish-haskell"
         }
     },
     -- gopls = {},

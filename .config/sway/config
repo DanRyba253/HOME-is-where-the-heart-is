@@ -152,7 +152,8 @@ client.focused #444444 #333333 #ffffff
 
 default_border none
 
-output "*" bg ~/.local/share/images/bocchi.png fill
+# output "*" bg ~/.local/share/images/bocchi.png fill
+exec --no-startup-id ~/.config/sway/swww_randomize.sh ~/.local/share/images
 
 input * {
     xkb_layout "us,ru"
