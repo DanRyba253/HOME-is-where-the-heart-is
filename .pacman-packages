@@ -29,6 +29,8 @@ lutris
 man-db
 mate-polkit
 mimeo
+mkdocs
+mpv
 mtools
 nano
 nasm
@@ -41,6 +43,7 @@ noto-fonts-emoji
 os-prober
 pacman-contrib
 python-i3ipc
+python-pip
 qbittorrent
 rmlint
 sudo
