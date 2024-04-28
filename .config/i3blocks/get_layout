@@ -1,0 +1,7 @@
+#!/usr/bin/fish
+set id (string sub -s -2 -l 1 (swaymsg -t get_inputs | grep -A 10 'AT Translated' | grep 'xkb_active_layout_index'))
+if test $id -eq 0
+    echo "US"
+else
+    echo "RU"
+end

@@ -1,0 +1,4 @@
+map H set hidden!
+map a push $mk<space>
+map R push $rm<space>-rf<space>"$f"
+map <enter> push $"$OPENER"<space>"$f"<enter>
