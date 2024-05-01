@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # install native packages
-sudo pacman -S (cat .pkglist)
+sudo pacman -S --needed (cat .pkglist)
 
 # install yay
 sudo pacman -S --needed git base-devel
