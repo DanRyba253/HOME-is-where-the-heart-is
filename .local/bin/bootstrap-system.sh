@@ -21,5 +21,5 @@ sudo chsh $(which fish)
 fish_add_path ~/.local/bin
 
 # enable crond service
-sudo systemctl enable --now crond
+sudo systemctl enable --now cronie
 
