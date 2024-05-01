@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # install native packages
-sudo pacman -S --needed (cat .pkglist)
+sudo pacman -S --needed $(cat .pkglist)
 
 # install yay
 sudo pacman -S --needed git base-devel
@@ -12,10 +12,10 @@ cd ~
 rm -rf yay
 
 # install AUR packages
-yay -S --editmenu (sed '/yay/d' .aurpkglist)
+yay -S --editmenu $(sed '/yay/d' .aurpkglist)
 
 # change the shell
-sudo chsh (which fish)
+sudo chsh $(which fish)
 
 # add local binaries to PATH
 fish_add_path ~/.local/bin
