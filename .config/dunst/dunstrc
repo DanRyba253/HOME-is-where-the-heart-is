@@ -458,6 +458,6 @@
 #
 [i3blocks]
     summary = "*"
-    script = /home/dani/.config/i3blocks/notify
+    script = /home/$USER/.config/i3blocks/notify
     skip_display = yes
 # vim: ft=cfg
