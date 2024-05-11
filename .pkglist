@@ -63,5 +63,6 @@ wireplumber
 wl-clipboard
 xorg-xhost
 xorg-xwayland
+xss-lock
 yadm
 zram-generator
