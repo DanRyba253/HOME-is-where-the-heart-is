@@ -479,4 +479,5 @@ require('which-key').register({
 vim.cmd "autocmd BufWinEnter,WinEnter term://* startinsert"
 vim.cmd "tnoremap <Esc> <C-\\><C-N>:ToggleTerm<Enter>"
 
+
 vim.opt.colorcolumn = "80"
