@@ -14,6 +14,9 @@ rm -rf yay
 # disable debug packages
 sed -i '/^OPTIONS/s/debug/!debug/' /etc/makepkg.conf
 
+#remove yay-debug package
+sudo pacman -R yay-debug
+
 # install AUR packages
 yay -S --editmenu $(sed '/yay/d' .aurpkglist)
 
@@ -25,4 +28,7 @@ fish_add_path ~/.local/bin
 
 # enable crond service
 sudo systemctl enable --now cronie
+
+# bypass prismlauncher account check
+echo '{"accounts": [{"entitlement": {"canPlayMinecraft": true,"ownsMinecraft": true},"type": "Offline"}],"formatVersion": 3}' > ~/.local/share/PrismLauncher/accounts.json
 
