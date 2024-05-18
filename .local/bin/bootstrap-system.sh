@@ -12,7 +12,7 @@ cd ~
 rm -rf yay
 
 # disable debug packages
-sed -i '/^OPTIONS/s/debug/!debug/' /etc/makepkg.conf
+sudo sed -i '/^OPTIONS/s/debug/!debug/' /etc/makepkg.conf
 
 #remove yay-debug package
 sudo pacman -R yay-debug
