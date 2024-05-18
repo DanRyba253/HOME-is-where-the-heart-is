@@ -21,14 +21,7 @@ sudo pacman -R yay-debug
 yay -S --editmenu $(sed '/yay/d' .aurpkglist)
 
 # change the shell
-sudo chsh $(which fish) $USER
-
-# add local binaries to PATH
-fish_add_path ~/.local/bin
+chsh
 
 # enable crond service
 sudo systemctl enable --now cronie
-
-# bypass prismlauncher account check
-echo '{"accounts": [{"entitlement": {"canPlayMinecraft": true,"ownsMinecraft": true},"type": "Offline"}],"formatVersion": 3}' > ~/.local/share/PrismLauncher/accounts.json
-
