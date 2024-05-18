@@ -21,7 +21,7 @@ sudo pacman -R yay-debug
 yay -S --editmenu $(sed '/yay/d' .aurpkglist)
 
 # change the shell
-sudo chsh $(which fish)
+sudo chsh $(which fish) $USER
 
 # add local binaries to PATH
 fish_add_path ~/.local/bin
