@@ -10,7 +10,7 @@
   "friendly-snippets": { "branch": "main", "commit": "ea068f1becd91bcd4591fceb6420d4335e2e14d3" },
   "harpoon": { "branch": "master", "commit": "ccae1b9bec717ae284906b0bf83d720e59d12b91" },
   "indent-blankline.nvim": { "branch": "master", "commit": "3d08501caef2329aba5121b753e903904088f7e6" },
-  "lazy.nvim": { "branch": "main", "commit": "bef521ac89c8d423f9d092e37b58e8af0c099309" },
+  "lazy.nvim": { "branch": "main", "commit": "758bb5de98b805acc5eeed8cdc8ac7f0bc4b0b86" },
   "lexima.vim": { "branch": "master", "commit": "905c14e9b701cea1f05db755398ef0060f2c1fcc" },
   "lualine.nvim": { "branch": "master", "commit": "0a5a66803c7407767b799067986b4dc3036e1983" },
   "mason-lspconfig.nvim": { "branch": "main", "commit": "273fdde8ac5e51f3a223ba70980e52bbc09d9f6f" },

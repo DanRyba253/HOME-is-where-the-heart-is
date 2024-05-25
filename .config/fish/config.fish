@@ -6,6 +6,8 @@ if status is-interactive
     if test -z "$WAYLAND_DISPLAY"; and test "$XDG_VTNR" -eq 1
         exec sway
     end
+
+    alias cdf "cd (find | fzf)"
 end
 
 set EDITOR nvim
