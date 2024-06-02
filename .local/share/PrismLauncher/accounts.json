@@ -1,1 +1,39 @@
-{"accounts": [{"entitlement": {"canPlayMinecraft": true,"ownsMinecraft": true},"type": "Offline"}],"formatVersion": 3}
+{
+    "accounts": [
+        {
+            "entitlement": {
+                "canPlayMinecraft": true,
+                "ownsMinecraft": true
+            },
+            "type": "Offline"
+        },
+        {
+            "active": true,
+            "entitlement": {
+                "canPlayMinecraft": true,
+                "ownsMinecraft": true
+            },
+            "profile": {
+                "capes": [
+                ],
+                "id": "6c52109abbf23b5eb7884797eeff7f90",
+                "name": "DaniRybe",
+                "skin": {
+                    "id": "",
+                    "url": "",
+                    "variant": ""
+                }
+            },
+            "type": "Offline",
+            "ygg": {
+                "extra": {
+                    "clientToken": "fa605faf3fe14cb8b167bcf39ce4e48e",
+                    "userName": "DaniRybe"
+                },
+                "iat": 1716971536,
+                "token": "0"
+            }
+        }
+    ],
+    "formatVersion": 3
+}

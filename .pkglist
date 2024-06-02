@@ -24,6 +24,7 @@ htop
 i3blocks
 intel-ucode
 jdk17-openjdk
+jdk21-openjdk
 jdk8-openjdk
 kitty
 lazygit
@@ -40,6 +41,9 @@ nano
 ncdu
 neovim
 networkmanager
+noto-fonts
+noto-fonts-cjk
+noto-fonts-emoji
 os-prober
 pacman-contrib
 pipewire
@@ -66,4 +70,3 @@ xorg-xhost
 xorg-xwayland
 xss-lock
 yadm
-zram-generator
