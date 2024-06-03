@@ -5,6 +5,7 @@ chromium
 clang
 cmake
 discord
+dkms
 dmenu
 dosfstools
 dunst
@@ -32,8 +33,10 @@ lf
 libpulse
 linux
 linux-firmware
+linux-headers
 man-db
 mate-polkit
+mesa-utils
 mpv
 mtools
 namcap
@@ -44,6 +47,9 @@ networkmanager
 noto-fonts
 noto-fonts-cjk
 noto-fonts-emoji
+nvidia
+nvidia-prime
+nvidia-utils
 os-prober
 pacman-contrib
 pipewire
@@ -62,8 +68,6 @@ timeshift
 tmux
 ttf-jetbrains-mono-nerd
 unarchiver
-wine
-winetricks
 wireplumber
 wl-clipboard
 xorg-xhost

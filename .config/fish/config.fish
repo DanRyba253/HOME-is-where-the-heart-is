@@ -4,7 +4,7 @@ if status is-interactive
     fish_vi_key_bindings
 
     if test -z "$WAYLAND_DISPLAY"; and test "$XDG_VTNR" -eq 1
-        exec sway
+        exec sway --unsupported-gpu
     end
 
     alias cdf "cd (find | fzf)"
