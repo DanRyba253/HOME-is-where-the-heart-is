@@ -7,8 +7,6 @@ if status is-interactive
         exec sway --unsupported-gpu
     end
 
-    alias cdf "cd (find | fzf)"
-
 end
 
 set EDITOR nvim
