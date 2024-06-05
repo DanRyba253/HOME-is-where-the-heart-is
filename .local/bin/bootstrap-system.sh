@@ -11,12 +11,6 @@ makepkg -si
 cd ~
 rm -rf yay
 
-# disable debug packages
-sudo sed -i '/^OPTIONS/s/debug/!debug/' /etc/makepkg.conf
-
-#remove yay-debug package
-sudo pacman -R yay-debug
-
 # install AUR packages
 yay -S --editmenu $(sed '/yay/d' .aurpkglist)
 
