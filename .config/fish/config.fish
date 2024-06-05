@@ -15,4 +15,4 @@ set -q GHCUP_INSTALL_BASE_PREFIX[1]; or set GHCUP_INSTALL_BASE_PREFIX $HOME ; se
 
 set LANG en_US.utf-8
 
-zoxide init fish | source
+zoxide init --cmd cd fish | source
