@@ -8,6 +8,7 @@ if status is-interactive
     end
 
     alias cdf "cd (find | fzf)"
+
 end
 
 set EDITOR nvim
@@ -15,3 +16,5 @@ set EDITOR nvim
 set -q GHCUP_INSTALL_BASE_PREFIX[1]; or set GHCUP_INSTALL_BASE_PREFIX $HOME ; set -gx PATH $HOME/.local/bin $HOME/.cabal/bin /home/$USER/.ghcup/bin $PATH # ghcup-env
 
 set LANG en_US.utf-8
+
+zoxide init fish | source
