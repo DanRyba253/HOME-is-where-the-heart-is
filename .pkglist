@@ -5,11 +5,11 @@ chromium
 clang
 cmake
 discord
-dkms
 dmenu
 dosfstools
 dunst
 efibootmgr
+fastfetch
 feh
 fish
 fzf

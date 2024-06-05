@@ -481,3 +481,4 @@ vim.cmd "tnoremap <Esc> <C-\\><C-N>:ToggleTerm<Enter>"
 
 
 vim.opt.colorcolumn = "80"
+
