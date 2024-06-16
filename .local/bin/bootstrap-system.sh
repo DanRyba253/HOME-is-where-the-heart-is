@@ -19,3 +19,6 @@ chsh
 
 # enable crond service
 sudo systemctl enable --now cronie
+
+# enable bluetooth service
+sudo systemctl enable --now bluetooth.service
