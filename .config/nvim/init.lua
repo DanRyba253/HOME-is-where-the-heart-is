@@ -249,7 +249,7 @@ vim.keymap.set('n', '<leader>ss', require('telescope.builtin').live_grep, { desc
 vim.keymap.set('n', '<leader>sf', require('telescope.builtin').find_files, { desc = '[S]earch [F]iles' })
 
 -- LSP diagnostics
-vim.keymap.set('n', '<leader>ld', require('trouble').toggle, { desc = '[D]iagnostics' })
+vim.keymap.set('n', '<leader>ld', function() require('trouble').toggle("diagnostics") end, { desc = '[D]iagnostics' })
 
 -- [[ Configure Treesitter ]]
 -- See `:help nvim-treesitter`
