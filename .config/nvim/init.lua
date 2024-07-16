@@ -306,7 +306,7 @@ local on_attach = function(_, bufnr)
     end
 
     nmap('<leader>lr', vim.lsp.buf.rename, '[R]ename')
-    nmap('<leader>la', vim.lsp.buf.code_action, 'Code [A]ction')
+    nmap('<leader>la', require('actions-preview').code_actions, 'Code [A]ction')
     nmap('<leader>ll', vim.lsp.codelens.run, 'Code [L]ens')
 
     nmap('<leader>lD', require('telescope.builtin').lsp_definitions, 'Goto [D]efinition')
@@ -479,6 +479,4 @@ require('which-key').register({
 vim.cmd "autocmd BufWinEnter,WinEnter term://* startinsert"
 vim.cmd "tnoremap <Esc> <C-\\><C-N>:ToggleTerm<Enter>"
 
-
 vim.opt.colorcolumn = "80"
-

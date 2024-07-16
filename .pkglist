@@ -22,6 +22,7 @@ grub
 gst-plugin-pipewire
 gvfs-mtp
 htop
+hugo
 i3blocks
 intel-ucode
 jdk17-openjdk
@@ -47,6 +48,7 @@ networkmanager
 noto-fonts
 noto-fonts-cjk
 noto-fonts-emoji
+npm
 nvidia
 nvidia-prime
 nvidia-utils
@@ -62,6 +64,7 @@ rmlint
 slurp
 sof-firmware
 swaylock
+swww
 sysstat
 thunar
 timeshift
@@ -74,4 +77,5 @@ xorg-xhost
 xorg-xwayland
 xss-lock
 yadm
+yt-dlp
 zoxide
