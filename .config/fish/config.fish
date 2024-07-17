@@ -6,7 +6,16 @@ if status is-interactive
     if test -z "$WAYLAND_DISPLAY"; and test "$XDG_VTNR" -eq 1
         exec sway --unsupported-gpu
     end
-
+    
+    alias 'trash' 'gio trash'
+    function trash-restore
+        for i in (seq (count $argv))
+            set argv[$i] "trash:///"$argv[$i]
+        end
+        gio trash --restore $argv
+    end
+    alias 'trash-empty' 'gio trash --empty'
+    alias 'trash-list' 'gio trash --list'
 end
 
 set EDITOR nvim
