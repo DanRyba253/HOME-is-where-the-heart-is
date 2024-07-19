@@ -6,9 +6,8 @@ def get_data(current):
     bottommost = True
 
     while True:
-        if current.type == "workspace":
+        if current.type == "workspace" or current.type == "floating_con":
             return rightmost, bottommost
-
         parent = current.parent
         children = parent.nodes
 
