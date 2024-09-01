@@ -54,6 +54,7 @@ vim.g.codeium_disable_bindings = 1
 -- LSP remaps
 vim.keymap.set('n', '<leader>lr', vim.lsp.buf.rename)
 vim.keymap.set('n', '<leader>ll', vim.lsp.codelens.run)
+vim.keymap.set('n', '<leader>lf', vim.lsp.buf.format)
 -- refresh codelens on TextChanged and InsertLeave as well
 vim.api.nvim_create_autocmd({ 'TextChanged', 'InsertLeave' }, {
     buffer = bufnr,
@@ -94,3 +95,14 @@ cmp.setup {
 vim.diagnostic.config {
   virtual_text = false
 }
+-- Haskell tools settings
+vim.g.haskell_tools = {
+    hls = {
+        settings = {
+            haskell = {
+                formattingProvider = 'stylish-haskell'
+            }
+        }
+    }
+}
+
