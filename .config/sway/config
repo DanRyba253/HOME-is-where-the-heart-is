@@ -174,4 +174,5 @@ exec --no-startup-id /usr/lib/mate-polkit/polkit-mate-authentication-agent-1
 blur enable
 blur_passes 1
 default_dim_inactive 0.3
+for_window [floating] dim_inactive 0.0
 workspace_layout tabbed
