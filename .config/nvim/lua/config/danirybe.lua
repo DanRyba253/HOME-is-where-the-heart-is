@@ -15,9 +15,8 @@ vim.o.ignorecase = true
 vim.o.smartcase = true
 vim.wo.signcolumn = "yes"
 vim.o.termguicolors = true
-vim.cmd "autocmd BufWinEnter,WinEnter term://* startinsert"
-vim.cmd "tnoremap <Esc> <C-\\><C-N>:ToggleTerm<Enter>"
 vim.opt.colorcolumn = "80"
+vim.keymap.set("x", "p", function() return 'pgv"' .. vim.v.register .. "y" end, { remap = false, expr = true })
 -- Remaps for dealing with word wrap
 vim.keymap.set('n', 'k', "v:count == 0 ? 'gk' : 'k'", { expr = true, silent = true })
 vim.keymap.set('n', 'j', "v:count == 0 ? 'gj' : 'j'", { expr = true, silent = true })
@@ -37,8 +36,6 @@ local ui = require("buffer_manager.ui")
 vim.keymap.set('n', '<leader><Space>', ui.toggle_quick_menu)
 -- Neotree remaps
 vim.keymap.set('n', '<leader>e', function() vim.cmd("Neotree toggle") end)
--- ToggleTerm remaps
-vim.keymap.set('n', '<leader>t', function() vim.cmd("ToggleTerm direction='float'") end)
 -- Actions preview remaps
 local preview = require("actions-preview")
 vim.keymap.set('n', "<leader>la", preview.code_actions)
