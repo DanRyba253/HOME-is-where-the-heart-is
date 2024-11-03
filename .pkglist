@@ -10,6 +10,7 @@ dosfstools
 dunst
 efibootmgr
 fastfetch
+fd
 feh
 fish
 fzf
@@ -38,6 +39,7 @@ linux-headers
 man-db
 mate-polkit
 mesa-utils
+mkdocs
 mpv
 mtools
 namcap
@@ -58,8 +60,10 @@ pipewire
 pipewire-alsa
 pipewire-jack
 pipewire-pulse
+prismlauncher
 python-i3ipc
 qbittorrent
+ripgrep
 rmlint
 slurp
 sof-firmware
@@ -68,6 +72,7 @@ swww
 sysstat
 thunar
 timeshift
+tinyxxd
 tmux
 ttf-jetbrains-mono-nerd
 unarchiver
